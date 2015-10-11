@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ORXSys - Alex Guo</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      img { max-width: 100%; }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# ORXSys - OpenRISC based eXtensible System
+
+## (A Working in Progress Project)
+
+## Alex Guo
+
+## Credo Semi.
+
+---
+
+About Myself
+============
+
+Embedded System Design Manager @ Credo Semi.
+
+Open source contributor
+
+M.Eng. Degree in EE & Bachelar Degree in CS.
+
+[](1 min)
+
+---
+
+About Credo Semi.
+=================
+
+A Fabless founded in 2008.
+
+R&D @ Shanghai, HongKong & Silicon Valley
+
+* SerDes - 28G/56G NRZ
+* Ethernet over Coax
+* Hi-Speed ADC/DAC
+
+--
+
+We use or1200 as MCU in our products.
+
+[](2 min)
+
+---
+
+ORXSys - Intro
+==============
+
+ORXSys - OpenRISC based eXtensible System
+
+Inspired by MinSoc, ORPSoC and OpenWrt.
+
+--
+
+### For Internal Use
+
+- A **robust** MCU solution for our IC/IP products
+- A platform for fast development of FPGA based projects.
+
+--
+
+### As an Open Source Project:
+
+- Provide an easy to use development platform for FPGA/Embedded developers.
+
+
+[](2 min)
+
+---
+
+ORXSys - Finished Works
+=======================
+
+- SCons based Building Scripts
+- OpenRISC CPU: or1200 & mor1kx
+- FPGA boards: Atlys/Nexys4/Nexys3/Avnet LX9 MicroBoard
+- EDA tools:
+  - Simulation: VCS/iverilog/Xilinx Fuse
+  - Syn/PAR: Xilinx Command Line Tools (ISE)
+- Toolchains:
+  - GCC
+  - LLVM + GAS
+- Debugging: GDB & use openocd as bridge
+  - RTL-Simulator + jtag-vpi
+  - JTAG-Programmer + FPGA Board
+  - or1ksim
+
+[](1 min)
+
+---
+
+ORXSys - Related Works
+======================
+
+## RTOS: RT-Thread
+
+Porting OpenRISC to RT-Thread, drivers for SPI/UART/ethmac from OpenCores.org.
+
+URL: https://github.com/credosemi/rt-thread-openrisc
+
+## Others
+
+- Wishbone Multi-Ports Memory Slave Module - https://github.com/xfguo/wb_mp_mem
+- Some minor Pull Requests for mor1kx
+
+[](2 min)
+
+---
+
+ORXSys - Design Flow
+====================
+
+![Design Flow](flow.png)
+
+[](2 min)
+
+---
+
+ORXSys - Hardware Arch.
+=======================
+
+![Block Diagram](block-dia.png)
+
+[](2 min)
+
+---
+
+ORXSys - Future Works
+=====================
+
+- Generate the whole project from the "Project Description File":
+  - Construct Scripts
+  - RTL
+  - RTOS & Device Drivers
+  - Hello world example
+- Tcl command line interface & GUI
+
+[](2 min)
+
+---
+
+Thanks
+======
+
+Email: xfguo@xfguo.org
+
+GitHub: https://github.com/xfguo
+
+--
+
+## Questions?
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
